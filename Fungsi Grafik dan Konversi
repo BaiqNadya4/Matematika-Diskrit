@@ -1,0 +1,129 @@
+# Bukan fungsi
+a = 2
+b = 3
+c = a+b
+print ("Hasil dari ",a,"+",b,"adalah",c)
+
+
+# Bukan fungsi lainnya
+a = 15
+b = 20
+c=a+b
+print ("Hasil dari ",a,"+",b,"adalah",c)
+
+
+# Dengan menggunakan fungsi
+def tambah(a,b):
+  return a+b
+
+# Panggil fungsin
+tambah_pertama=tambah(2,3)
+print (tambah_pertama)
+
+tambah_kedua=tambah(15,20)
+print (tambah_kedua)
+
+
+
+# Fungsi f(x)= x+7
+# x=0 sampai 100
+def f(x):
+  return x+7
+
+for x in range(0,101):
+  print (f(x))
+
+
+# Fungsi g(x)=x^2+2x+6
+# x= -10 sampai 50
+def g(x):
+  return (x**2)+(2*x)+6
+
+for x in range(-10,51):
+  print (g(x))
+
+
+# Array atau list tanpa numpy
+# ini adalah nilai dari domain atau x
+data = [1,2,3]
+print (data)
+
+# inisiasi variabel baru yang bernama hasil
+# dimana hasil ini adalah fungsi f(x) dari f(x)=x^2
+hasil=[]
+for i in data:
+  hasil.append(i**2)
+print (hasil)
+
+
+# Menggunakan library numpy untuk mendapatkan hasil fungsi
+# install numpy
+!pip install numpy
+
+# Memasukkan library
+import numpy
+
+#Jalankan numpy untuk memenggil fungsi x^2
+data = numpy.array([1,2,3])
+print (data)
+hasil = data**2
+print (hasil)
+
+
+# Menggunakan library dengan alias (as)
+# Menggunakan library numpy untuk mendapatkan hasil fungsi
+# install numpy
+# !pip install numpy sudah diintstall jadi saya off kan atau command
+
+# Memasukkan library
+import numpy as np
+
+#Jalankan numpy untuk memenggil fungsi x^2
+data = np.array([1,2,3])
+print (data)
+hasil = data**2
+print (hasil)
+
+
+# Install library --> Skip jika sudah melakukan instalasi
+# !pip install numpy
+# !pip install matplotlib
+
+# Masukkan library numpy dan matplotlib
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Definisikan fungsi
+# Fungsi g(x)=x^2+2x+6
+def g(x):
+  return (x**2)+(2*x)+6
+
+
+# Membuat data dengan menggunakan numpy
+# Membuat data dari -50 sampai dengan 100
+x = np.linspace(-50,1,100)
+# Ini maksudnya adalah linspace (dimulai dari titik berapa, jarak (step) berapa, akhirnya berapa)
+y = g(x)
+
+# Membuat grafik fungsi
+plt.plot(x,y, label='g(x)=x^2+2x+6', color='red')
+plt.title('Grafik Fungsi g(x)')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.show()
+
+
+desimal = 125
+print (desimal)
+
+# Konversi ke Hexadesimal
+hexadesimal = hex(desimal)
+print (hexadesimal)
+
+# Konversi ke biner
+biner = bin(desimal)
+print (biner)
+
+# Konversi ke oktal
+oktal = oct(desimal)
+print (oktal)
